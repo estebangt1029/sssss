@@ -580,6 +580,11 @@ textarea::placeholder {
 
 /* Media query para pantallas pequeñas como móviles */
 @media (min-width: 300px) and (max-width: 767px) {
+   
+    .form__input{
+        margin-left: -20px;
+        width: 120%;
+    }
     .form {
         flex-direction: column; /* Cambia a dirección de columna para móviles */
     }
@@ -588,10 +593,9 @@ textarea::placeholder {
         min-width: auto; /* Ancho mínimo automático */
         min-height: 40px; /* Altura mínima reducida para móviles */
     }
-    textarea {
-        width: auto; /* Ancho automático para ajustar al contenido */
-        min-width: auto; /* Ancho mínimo automático */
-        min-height: 150px; /* Altura mínima reducida para móviles */
+    .textarea {
+        width: 120%; /* Ancho automático para ajustar al contenido */
+        margin-left: -20px;
     }
     .esconder {
         display: none; /* Ocultar elemento con display none */
@@ -642,5 +646,8 @@ textarea::placeholder {
     }
     .footer{
         height: 50px;
+    }
+    .confirmar-section__icon-button{
+        right: -25px;
     }
 }
